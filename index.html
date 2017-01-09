@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE8">
+    <meta name="description" content="LIVE SEARCH IN THE WEBSITE">
+    <meta name="keywords" content="live-search,website">
+    <meta name="robots" content="noindex">
+    <meta name="author" content="Mr CaT">
+
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/search.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("li").hover(function(){
+                $(this).stop().animate({opacity: ".6"}, 600);
+            }, function(){
+                $(this).stop().animate({opacity: "1"}, 600);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" name="referal" placeholder="" onfocus="if(this.value=='Search in the website') this.value='';" onblur="if(this.value=='') this.value='Search in the website';"  value="Search in the website" class="who" autocomplete="off">
+    <ul class="search_result"></ul>
+</body>
+</html>
